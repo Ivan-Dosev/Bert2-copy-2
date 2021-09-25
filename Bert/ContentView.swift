@@ -63,6 +63,8 @@ struct ContentView: View {
             Text("\(dossi)")
                 .foregroundColor(.clear)
                 .onChange(of: dossi){ _ in }
+            Text("alo")
+                .foregroundColor(.clear)
             
             VStack(alignment: .center) {
                 
@@ -162,22 +164,6 @@ struct ContentView: View {
                 .padding(.bottom)
             }
             
-
-                
-//                Spacer()
-//                Button(action: {
-//                    // Create wallet using either a private key or mnemonic
-//                    wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
-//                    // Create contract with wallet as the sender
-//                    contract = ProjectContract(wallet: wallet!)
-//                    // Call contract method
-//                    createNewProject()
-//                    getProjectTitle()
-//                }) {
-//                    Image(systemName: "paperplane.fill")
-//                        .font(.largeTitle)
-//                        .foregroundColor(.orange)
-//                }
          
         }
         .onTapGesture {
@@ -197,21 +183,9 @@ struct ContentView: View {
             case .firebase: ProgressView()
             }
         }
-
-//        .onAppear(){
-//            self.models.loadCountry(company: self.company, medicine: self.medicine)
-//        }
-
     }
     
-//    func loadUrlFromFirebase() {
-//        let fileRef     = Storage.storage().reference().child("nebilet.pdf")
-//        fileRef.downloadURL {( url , err ) in
-//            if let downloadUrl = url {
-//                self.documentURL = NSURL(string: scanningText)
-//            }
-//        }
-//    }
+
     
     func saveToFB(manifacturer: String, medicine: String, fileName: String, country: String, flag: String, nomer: Int, hash : String) {
         
