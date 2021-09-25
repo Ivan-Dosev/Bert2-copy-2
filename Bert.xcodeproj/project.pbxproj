@@ -32,6 +32,27 @@
 		CC8E59B326F0263B006E6C5D /* famotidine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AB26F0263B006E6C5D /* famotidine.pdf */; };
 		CC8E59B426F0263B006E6C5D /* famotidine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AB26F0263B006E6C5D /* famotidine.pdf */; };
 		CC8E59B626F305D6006E6C5D /* FirebaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E59B526F305D6006E6C5D /* FirebaseView.swift */; };
+		CC9A7CF726FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */; };
+		CC9A7CF826FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */; };
+		CC9A7CF926FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */; };
+		CC9A7CFA26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */; };
+		CC9A7CFB26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */; };
+		CC9A7CFC26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */; };
+		CC9A7CFD26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
+		CC9A7CFE26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
+		CC9A7CFF26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
+		CC9A7D0026FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
+		CC9A7D0126FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
+		CC9A7D0226FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
+		CC9A7D0326FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
+		CC9A7D0426FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
+		CC9A7D0526FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
+		CC9A7D0626FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */; };
+		CC9A7D0726FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */; };
+		CC9A7D0826FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */; };
+		CC9A7D0F26FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7D0E26FAE0D2004ACCA6 /* chinese-flag.pdf */; };
+		CC9A7D1026FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7D0E26FAE0D2004ACCA6 /* chinese-flag.pdf */; };
+		CC9A7D1126FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7D0E26FAE0D2004ACCA6 /* chinese-flag.pdf */; };
 		CCB3C26D26EEF69C0055F010 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CCB3C26C26EEF69C0055F010 /* FirebaseFirestoreSwift-Beta */; };
 		CCB3C26F26EEF69C0055F010 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CCB3C26E26EEF69C0055F010 /* FirebaseStorage */; };
 		CCB3C27126EEF69C0055F010 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CCB3C27026EEF69C0055F010 /* FirebaseAuth */; };
@@ -43,9 +64,9 @@
 		CCB3C27B26EF026A0055F010 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C27A26EF026A0055F010 /* Book.swift */; };
 		CCB3C27C26EF026A0055F010 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C27A26EF026A0055F010 /* Book.swift */; };
 		CCB3C27D26EF026A0055F010 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C27A26EF026A0055F010 /* Book.swift */; };
-		CCB3C28026EF09B70055F010 /* QRV.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* QRV.pdf */; };
-		CCB3C28126EF09B70055F010 /* QRV.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* QRV.pdf */; };
-		CCB3C28226EF09B70055F010 /* QRV.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* QRV.pdf */; };
+		CCB3C28026EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
+		CCB3C28126EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
+		CCB3C28226EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
 		CCB3C28426EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
 		CCB3C28526EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
 		CCB3C28626EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
@@ -107,9 +128,23 @@
 		CC8E59AA26F0263B006E6C5D /* nebilet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nebilet.pdf; sourceTree = "<group>"; };
 		CC8E59AB26F0263B006E6C5D /* famotidine.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = famotidine.pdf; sourceTree = "<group>"; };
 		CC8E59B526F305D6006E6C5D /* FirebaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseView.swift; sourceTree = "<group>"; };
+		CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PONVORY-English.pdf"; sourceTree = "<group>"; };
+		CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OPSUMIT-Spanish.pdf"; sourceTree = "<group>"; };
+		CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PONVORY-Spanish.pdf"; sourceTree = "<group>"; };
+		CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SIMPONI-es.pdf"; sourceTree = "<group>"; };
+		CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OPSUMIT-France.pdf"; sourceTree = "<group>"; };
+		CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SIMPONI_Italy.pdf; sourceTree = "<group>"; };
+		CC9A7D0E26FAE0D2004ACCA6 /* chinese-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "chinese-flag.pdf"; path = "../../../../../../qr/chinese-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1226FAE0DD004ACCA6 /* bulgarian-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "bulgarian-flag.pdf"; path = "../../../../../../qr/bulgarian-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1326FAE0EA004ACCA6 /* israeli-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "israeli-flag.pdf"; path = "../../../../../../qr/israeli-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1426FAE0F5004ACCA6 /* russian-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "russian-flag.pdf"; path = "../../../../../../qr/russian-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1526FAE334004ACCA6 /* russian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = russian.pdf; sourceTree = "<group>"; };
+		CC9A7D1626FAE334004ACCA6 /* bulgarian-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bulgarian-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1726FAE334004ACCA6 /* chinese-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "chinese-flag.pdf"; sourceTree = "<group>"; };
+		CC9A7D1826FAE334004ACCA6 /* israeli-flag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "israeli-flag.pdf"; sourceTree = "<group>"; };
 		CCB3C27626EEF7A80055F010 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCB3C27A26EF026A0055F010 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		CCB3C27F26EF09B70055F010 /* QRV.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = QRV.pdf; sourceTree = "<group>"; };
+		CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Valsacor_Bulgarian.pdf; sourceTree = "<group>"; };
 		CCB3C28326EF09CB0055F010 /* PdfColor.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PdfColor.pdf; sourceTree = "<group>"; };
 		CCB3C28726EF09DF0055F010 /* QQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQ.swift; sourceTree = "<group>"; };
 		CCB3C28B26EF09EB0055F010 /* PdfKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfKit.swift; sourceTree = "<group>"; };
@@ -209,7 +244,13 @@
 				CC48B38E26B5F700009A607C /* ContractHelpers.swift */,
 				CC48B21B26B427F7009A607C /* ContentView.swift */,
 				CCB3C27A26EF026A0055F010 /* Book.swift */,
-				CCB3C27F26EF09B70055F010 /* QRV.pdf */,
+				CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */,
+				CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */,
+				CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */,
+				CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */,
+				CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */,
+				CC9A7D1526FAE334004ACCA6 /* russian.pdf */,
+				CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */,
 				CCB3C27E26EF099A0055F010 /* Dossi */,
 				CC48B21D26B427FA009A607C /* Assets.xcassets */,
 				CC48B22226B427FA009A607C /* Info.plist */,
@@ -252,13 +293,37 @@
 				CC8E59AB26F0263B006E6C5D /* famotidine.pdf */,
 				CC8E59AA26F0263B006E6C5D /* nebilet.pdf */,
 				CCB3C28326EF09CB0055F010 /* PdfColor.pdf */,
+				CC9A7D0926FAE042004ACCA6 /* PdfFlags */,
+				CC9A7CF026FAD62A004ACCA6 /* PDF */,
 			);
 			path = PDFfiles;
+			sourceTree = "<group>";
+		};
+		CC9A7CF026FAD62A004ACCA6 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		CC9A7D0926FAE042004ACCA6 /* PdfFlags */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A7D1426FAE0F5004ACCA6 /* russian-flag.pdf */,
+				CC9A7D1326FAE0EA004ACCA6 /* israeli-flag.pdf */,
+				CC9A7D1226FAE0DD004ACCA6 /* bulgarian-flag.pdf */,
+				CC9A7D0E26FAE0D2004ACCA6 /* chinese-flag.pdf */,
+			);
+			path = PdfFlags;
 			sourceTree = "<group>";
 		};
 		CCB3C27E26EF099A0055F010 /* Dossi */ = {
 			isa = PBXGroup;
 			children = (
+				CC9A7D1826FAE334004ACCA6 /* israeli-flag.pdf */,
+				CC9A7D1626FAE334004ACCA6 /* bulgarian-flag.pdf */,
+				CC9A7D1726FAE334004ACCA6 /* chinese-flag.pdf */,
 				CCB3C28B26EF09EB0055F010 /* PdfKit.swift */,
 				CC8E59B526F305D6006E6C5D /* FirebaseView.swift */,
 				CCB3C28F26EF0A3A0055F010 /* EnumMedic.swift */,
@@ -391,13 +456,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB3C28026EF09B70055F010 /* QRV.pdf in Resources */,
+				CC9A7D0F26FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */,
+				CC9A7D0626FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
+				CCB3C28026EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
 				CC48B22126B427FA009A607C /* Preview Assets.xcassets in Resources */,
 				CCB3C28426EF09CB0055F010 /* PdfColor.pdf in Resources */,
 				CC8E59AC26F0263B006E6C5D /* Azithromycin.pdf in Resources */,
 				CCB3C27726EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
 				CC8E59AF26F0263B006E6C5D /* nebilet.pdf in Resources */,
+				CC9A7D0026FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */,
+				CC9A7CFD26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
+				CC9A7D0326FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
+				CC9A7CF726FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
 				CC8E59B226F0263B006E6C5D /* famotidine.pdf in Resources */,
+				CC9A7CFA26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
 				CC48B21E26B427FA009A607C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,10 +479,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8E59B026F0263B006E6C5D /* nebilet.pdf in Resources */,
-				CCB3C28126EF09B70055F010 /* QRV.pdf in Resources */,
+				CCB3C28126EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
+				CC9A7D0726FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
 				CC8E59AD26F0263B006E6C5D /* Azithromycin.pdf in Resources */,
+				CC9A7CF826FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
+				CC9A7D0126FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */,
+				CC9A7D1026FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */,
+				CC9A7CFB26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
 				CCB3C28526EF09CB0055F010 /* PdfColor.pdf in Resources */,
+				CC9A7D0426FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
 				CC8E59B326F0263B006E6C5D /* famotidine.pdf in Resources */,
+				CC9A7CFE26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
 				CCB3C27826EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +499,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8E59B126F0263B006E6C5D /* nebilet.pdf in Resources */,
-				CCB3C28226EF09B70055F010 /* QRV.pdf in Resources */,
+				CCB3C28226EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
+				CC9A7D0826FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
 				CC8E59AE26F0263B006E6C5D /* Azithromycin.pdf in Resources */,
+				CC9A7CF926FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
+				CC9A7D0226FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */,
+				CC9A7D1126FAE0D2004ACCA6 /* chinese-flag.pdf in Resources */,
+				CC9A7CFC26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
 				CCB3C28626EF09CB0055F010 /* PdfColor.pdf in Resources */,
+				CC9A7D0526FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
 				CC8E59B426F0263B006E6C5D /* famotidine.pdf in Resources */,
+				CC9A7CFF26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
 				CCB3C27926EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

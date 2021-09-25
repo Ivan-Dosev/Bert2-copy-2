@@ -18,6 +18,8 @@ struct Country: Identifiable,Codable {
                var flag      : String
                var urlToFile : String
                var name      : String
+               var hash      : String
+               var nomer : Int
 }
 
 class CountryRepository: ObservableObject {
@@ -33,6 +35,7 @@ class CountryRepository: ObservableObject {
                 guard let document = snapshot?.documents else {
                     print("No 🇧🇬🇧🇷🇧🇪Document ")
                     return }
+                
                 print("Document:\(document)")
                 self.models = document.compactMap{ queryDocumentSnapshot -> Country? in
                     return try? queryDocumentSnapshot.data(as: Country.self)
@@ -47,6 +50,7 @@ class CountryRepository: ObservableObject {
         
            let index =  models.firstIndex(where: { $0.id == model.id}) ??  0
            let url = models[index].urlToFile
+        
 
         return url
     }

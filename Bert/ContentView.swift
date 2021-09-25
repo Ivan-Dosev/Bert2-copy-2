@@ -16,6 +16,10 @@ var network:Network = .rinkeby
 var wallet:Wallet?
 var password = "dakata_7b" // leave empty string for ganache
 
+var contractAddressHash = "0x2f1Aa3d2aF7F0Eb6272aF6055a5804eEa39FB31c"
+
+//var contractAddressHash = "0x9B82a0661c0D7f20E02A9027B1885622C41D32cb"
+
 
 struct ContentView: View {
     
@@ -25,6 +29,9 @@ struct ContentView: View {
     @State var medicine: String = ""
     @State var location = Locale.current
     @State var onSelect : Bool = false
+    @State var dossi : String = ""
+    @State var dossihashedValue : String = ""
+    @State var showAlert : Bool = false
     
     @State var isShow : Bool = false
     @State var scanningText : String = ""
@@ -36,17 +43,10 @@ struct ContentView: View {
 
         
         ZStack {
-            Image("qr_image")
-                .resizable()
-                .scaledToFit()
-                .opacity(0.2)
-                .scaleEffect(1.5)
-                .edgesIgnoringSafeArea(.all)
+
             Text("\(self.documentURL!.relativeString)")
                 .foregroundColor(.clear)
-                .onChange(of: documentURL!.relativeString) { _ in
-                    self.isMedic = .pdfAction
-                }
+                .onChange(of: documentURL!.relativeString) { _ in }
             Text("Scanner goes here...\n\(self.scanningText)")
                 .foregroundColor(.clear)
                 .onChange(of: scanningText) { _ in
@@ -60,104 +60,88 @@ struct ContentView: View {
                     self.models.loadCountry(company: self.company, medicine: self.medicine)
                 }
                 .foregroundColor(.red)
+            Text("\(dossi)")
+                .foregroundColor(.clear)
+                .onChange(of: dossi){ _ in }
             
             VStack(alignment: .center) {
                 
-                VStack(alignment: .center){
-                    Text("HackZurich 2021")
-                        .font(.system(size: 27))
-//                    Text(location.regionCode!)
-
-                }
-                .frame(width: UIScreen.main.bounds.width * 1.2 , height: 110)
-                .modifier(PrimaryButton())
-                .edgesIgnoringSafeArea(.top)
-//                .onChange(of: scanningText) { _ in
-//                    self.documentURL = NSURL(string: scanningText)
-//                    isMedic = .pdfAction
-//                }
+             Image("10136")
+                .resizable()
+                .frame(width: 350, height: 200, alignment: .center)
+                .padding(.top)
+                .padding(.top)
                 
+                
+                Text("ePI Scanner HackZurich 2021")
+                    .font(.system(size: 21))
+                    .foregroundColor(Color.blue.opacity(0.5))
+                    .offset(y: -35)
+                
+                      
 //  MARK: - Buttons
                 
-                HStack{
-                    
-                    Button(action: {
-                        // Create wallet using either a private key or mnemonic
-                        wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
-                        
-                        // Create contract with wallet as the sender
-                        contract = ProjectContract(wallet: wallet!)
-                        
-                        // Call contract method
-                        // createNewProject()
-                        saveToFB(manifacturer: "BAYER", medicine: "Aspirin-protect", fileName: "famotidine", country: "Cuba", flag: "🇨🇺")
-                        getProjectTitle()
-                        
-                     
-                        
-                    }) {
-                       Text("🐱")
-                            .font(.largeTitle)
-                            .foregroundColor(.orange)
-                    }.offset(x: -20)
-                   
-                    Button(action: {
-                        // Create wallet using either a private key or mnemonic
-                        wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
-                        // Create contract with wallet as the sender
-                        contract = ProjectContract(wallet: wallet!)
-                        // Call contract method
-                       // createNewProject()
-                        saveToFireBase()
-                        getProjectTitle()
-                    }) {
-                        Image(systemName: "paperplane.fill")
-                            .font(.largeTitle)
-                            .foregroundColor(.orange)
-                    }.offset(x: 20)
-                    
-                }
+             
                 ZStack {
                     VStack(alignment: .center, spacing: 20){
                         ForEach(models.models) { model in
+
                             HStack{
                                 Button(action: {
-                                    self.onSelect = true
+                                        self.onSelect = true
                                         let stringUrl = models.getURL(model: model)
-                                    if stringUrl == self.documentURL?.relativeString {
-                                        self.isMedic = .pdfAction
-                                    }else{
-                                        
-                                        self.documentURL = NSURL(string: models.getURL(model: model))
-                                    }
+                                        contractAddressHash = model.hash
+                                    
+                                    if let url = NSURL(string: models.getURL(model: model)) {
+                                        self.documentURL = url
                                         let data = NSData(contentsOf: NSURL(string: stringUrl) as! URL)
-                                        let hashedValue = SHA256.hash(data: data! )
-//                                    трябва да се проверъ hashedValue с този от Етхериум и тогажа да се присвои  self.documentURL
-//                                    в противен слуцхеи Алерт
-                      
-                                  
+                                        self.dossihashedValue = "\(SHA256.hash(data: data! ))"
+                                    print("dossihashedValue: ...\(dossihashedValue)")
+                                        wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
+                                        contract = ProjectContract(wallet: wallet!, contract: contractAddressHash)
+                                    getProjectString(nomer: model.nomer) { str in
+                                            print("srt:... \(str)")
+                                            if str == self.dossihashedValue {
+                                                
+                                                self.isMedic = .pdfAction
+                                            }else{
+                                                self.showAlert = true
+                                                onSelect = false
+                                            }
+                                        }
+                                    }
+//                                        self.documentURL = NSURL(string: models.getURL(model: model))
+                                        let data = NSData(contentsOf: NSURL(string: stringUrl) as! URL)
+                                        self.dossihashedValue = "\(SHA256.hash(data: data! ))"
+                                    print("dossihashedValue: ...\(dossihashedValue)")
+                                        wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
+                                        contract = ProjectContract(wallet: wallet!, contract: contractAddressHash)
+                                        getProjectString(nomer: model.nomer) { str in
+                                            print("srt:... \(str)")
+                                            if str == self.dossihashedValue {
+                                                
+                                                self.isMedic = .pdfAction
+                                            }else{
+                                                self.showAlert = true
+                                                onSelect = false
+                                            }
+                                        }
                                 }) {
                                     HStack{
-                                        Text(model.flag)
-                                            .scaleEffect(2)
+                                        Text(model.flag).scaleEffect(2)
                                         Spacer()
-                                        Text(model.country)
-                                            .font(.system(size: 12))
+                                        Text(model.country).font(.system(size: 12))
                                     }
-
-
                                 }
-                                .padding(.horizontal, 20)
-                                .frame(width: 200, height: 40, alignment: .center)
-                                .modifier(PrimaryButton())
-
+                                .foregroundColor(Color.black.opacity(0.5))
+                                .frame(width: 200, height: 25, alignment: .center)
+                                .padding()
+                                .background(Color.orange.opacity(0.5))
+                                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                             }
-
                         }
                     }
-                    if onSelect {
-                        ShadowedProgressViews()
-                    }
+                    if onSelect { ShadowedProgressViews() }
                 }
 //  MARK: - Scanar
                 
@@ -167,11 +151,15 @@ struct ContentView: View {
                     isMedic = .scanningAction
 
                 }) {
-                    Text("start scanning")
+                    Text("Find medical leaflet")
                         .font(.system(size: 27))
-                        .frame(width: UIScreen.main.bounds.width / 1.2 , height: 100)
-                        .modifier(PrimaryButton())
+                        .frame(width: UIScreen.main.bounds.width / 1.4 , height: 20)
+                        .foregroundColor(Color.black.opacity(0.4))
+                        .padding()
+                        .background(Color.orange.opacity(0.5))
+                        .cornerRadius(15)
                 }
+                .padding(.bottom)
             }
             
 
@@ -192,12 +180,21 @@ struct ContentView: View {
 //                }
          
         }
+        .onTapGesture {
+            self.onSelect = false
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Warning"),
+                  message: Text("The pdf file is not legitimate."),
+                  dismissButton: .default(Text("Done"), action: {
+                  }))
+        }
        
         .sheet(item: $isMedic)  { medic in
             switch medic {
             case .scanningAction:  ScannerView( scanningText: $scanningText)
             case .pdfAction: PDFKitView(url: documentURL! as URL).onAppear(){onSelect = false}
-            case .firebase: EmptyView()
+            case .firebase: ProgressView()
             }
         }
 
@@ -216,7 +213,7 @@ struct ContentView: View {
 //        }
 //    }
     
-    func saveToFB(manifacturer: String, medicine: String, fileName: String, country: String, flag: String) {
+    func saveToFB(manifacturer: String, medicine: String, fileName: String, country: String, flag: String, nomer: Int, hash : String) {
         
         let path = Bundle.main.path(forResource: fileName, ofType: "pdf")
         let filePathURL = URL(fileURLWithPath: path!)
@@ -244,7 +241,7 @@ struct ContentView: View {
                             createNewProject( hashedValue: hashedValue, downloadURL: downloadURL.relativeString)
                         }catch{ print("no  > Hashed Value")}
                         
-                        saveModelToFB(manifacturer: manifacturer, medicine:  medicine, downloadURL: downloadURL.relativeString, country: country, flag: flag)
+                        saveModelToFB(manifacturer: manifacturer, medicine:  medicine, downloadURL: downloadURL.relativeString, country: country, flag: flag, nomer: nomer, hash: hash)
                     }
                 }
                 
@@ -257,9 +254,9 @@ struct ContentView: View {
     
     
     
-    func saveModelToFB(manifacturer: String, medicine: String, downloadURL: String,  country: String, flag: String){
+    func saveModelToFB(manifacturer: String, medicine: String, downloadURL: String,  country: String, flag: String, nomer : Int, hash : String){
         
-        let moselToSave = Country(country: country, flag: flag, urlToFile: downloadURL, name: medicine)
+        let moselToSave = Country(country: country, flag: flag, urlToFile: downloadURL, name: medicine, hash: hash, nomer: nomer)
         let db = Firestore.firestore()
         
         do{
@@ -304,7 +301,7 @@ struct ContentView: View {
                             let hashedValue = SHA256.hash(data: data! )
                             print("Hashed Value: \(hashedValue)")
                             createNewProject( hashedValue: hashedValue, downloadURL: downloadURL.relativeString)
-                        }catch{ print("no  > Hashed Value")}
+                        }catch{ print("no  > Hashed Value🇪🇸 🇬🇧 🇮🇹 🇫🇷 🇮🇱 🇷🇺 🇧🇬 🇨🇳")}
 
                     }
                 }
@@ -319,13 +316,11 @@ struct ContentView: View {
 
     func createNewProject( hashedValue: SHA256.Digest, downloadURL: String) {
         
-        let projectTitle = "HouseSiding"
-        let projectLocation = "299 Race Ave. Dacula, GA 30019"
+        
         let projectStart = "\(downloadURL)"
         let projectEnd = "\(hashedValue)"
-        let teamType = "Collaboration"
 
-        let parameters = [projectTitle,projectLocation,projectStart,projectEnd,teamType] as [AnyObject]
+        let parameters = [projectStart,projectEnd] as [AnyObject]
         firstly {
             // Call contract method
             callContractMethod(method: .projectContract, parameters: parameters,password: "dakata_7b")
@@ -341,7 +336,24 @@ struct ContentView: View {
         let parameters = [] as [AnyObject]
         firstly {
             // Call contract method
-            callContractMethod(method: .getProjectEnd, parameters: parameters,password: nil)
+            callContractMethod(method: .getDate, parameters: parameters,password: nil)
+        }.done { response in
+            // print out response
+            print("getProjectTitle response \(response)")
+        }
+    }
+    
+    func getProjectString(nomer: Int, onDossi: @escaping (String) -> Void){
+        let parameters = [] as [AnyObject]
+      
+        firstly {
+            // Call contract method
+            callContractMethodDossi(nomer: nomer ,method: .getDate, parameters: parameters,password: nil) { str in
+                print("Dossi ... \(str as String )")
+//                self.dossi = String(str)
+                   onDossi(str)
+              
+            }
         }.done { response in
             // print out response
             print("getProjectTitle response \(response)")

@@ -29,9 +29,9 @@ struct ShadowedProgressViews: View {
 struct DarkBlueShadowProgressViewStyle: ProgressViewStyle {
     func makeBody(configuration: Configuration) -> some View {
         ProgressView(configuration)
-            .shadow(color: Color(.green),radius: 5.0, x: 0, y: 5)
-            .shadow(color: Color(.green),radius: 5.0, x: 0, y: 5)
-            .shadow(color: Color(.green),radius: 5.0, x: 0, y: 5)
+            .shadow(color: Color(.orange),radius: 5.0, x: 0, y: 5)
+            .shadow(color: Color(.orange),radius: 5.0, x: 0, y: 5)
+            .shadow(color: Color(.orange),radius: 5.0, x: 0, y: 5)
            
     }
 }

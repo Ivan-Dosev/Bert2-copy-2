@@ -169,7 +169,7 @@ class CameraPreview: UIView {
 
 class QrCodeCameraDelegate: NSObject, AVCaptureMetadataOutputObjectsDelegate {
     
-    var scanInterval: Double = 1.0
+    var scanInterval: Double = 3.0
     var lastTime = Date(timeIntervalSince1970: 0)
     
     var onResult: (String) -> Void = { _  in }
@@ -200,7 +200,7 @@ class QrCodeCameraDelegate: NSObject, AVCaptureMetadataOutputObjectsDelegate {
 class ScannerViewModel: ObservableObject {
     
     /// Defines how often we are going to try looking for a new QR-code in the camera feed.
-    let scanInterval: Double = 1.0
+    let scanInterval: Double = 3.0
     
     @Published var torchIsOn: Bool = false
     @Published var lastQrCode: String = "Qr-code goes here"
@@ -218,14 +218,13 @@ struct ScannerView: View {
     @Binding var scanningText : String
     var body: some View {
         ZStack {
-            Text("Scanner goes here...")
-            
-            
             VStack {
                 VStack {
-                    Text("Keep scanning for QR-codes")
+                    Text("Searching ... ")
                         .font(.subheadline)
+                        .foregroundColor(.blue)
                     Text(self.viewModel.lastQrCode)
+                        .foregroundColor(Color.clear)
                         .onChange(of: viewModel.lastQrCode) { _ in
                             scanningText = self.viewModel.lastQrCode
                             pMode.wrappedValue.dismiss()
@@ -236,6 +235,7 @@ struct ScannerView: View {
                     .found(r: self.viewModel.onFoundQrCode)
                     .torchLight(isOn: self.viewModel.torchIsOn)
                     .interval(delay: self.viewModel.scanInterval)
+                    .cornerRadius(20)
                 }
                 .padding(.vertical, 20)
                 
