@@ -20,12 +20,15 @@ var contractAddressHash = "0x2f1Aa3d2aF7F0Eb6272aF6055a5804eEa39FB31c"
 
 //var contractAddressHash = "0x9B82a0661c0D7f20E02A9027B1885622C41D32cb"
 
+<<<<<<< HEAD
 // N1 France  - 0x3c969Ed267038fbe1d9c7029278C29dC86138525
 // N2 Spanish - 0xf2fc113bBAa8956fd6f9bb515192292BD34D4e04
 // N3 Italy   - 0x2918df1bE4b9f208186Ecfccf7dD938589608d22
 // N4 English - 0x6E0a838CB92B53cF8073284ac9b85213BF5cAa26
 // N5 Spanish - 0x2f1Aa3d2aF7F0Eb6272aF6055a5804eEa39FB31c
 
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 
 struct ContentView: View {
 
@@ -38,7 +41,11 @@ struct ContentView: View {
     @State var dossi : String = ""
     @State var dossihashedValue : String = ""
     @State var showAlert : Bool = false
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
     @State var isShow : Bool = false
     @State var scanningText : String = ""
     @State var isMedic : Medic?
@@ -70,20 +77,34 @@ struct ContentView: View {
             Text("\(dossi)")
                 .foregroundColor(.clear)
                 .onChange(of: dossi){ _ in }
+<<<<<<< HEAD
 
             VStack(alignment: .center) {
 
+=======
+            Text("alo")
+                .foregroundColor(.clear)
+            
+            VStack(alignment: .center) {
+                
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
              Image("10136")
                 .resizable()
                 .frame(width: 350, height: 200, alignment: .center)
                 .padding(.top)
                 .padding(.top)
+<<<<<<< HEAD
 
 
+=======
+                
+                
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                 Text("ePI Scanner HackZurich 2021")
                     .font(.system(size: 21))
                     .foregroundColor(Color.blue.opacity(0.5))
                     .offset(y: -35)
+<<<<<<< HEAD
 
 
 //  MARK: - Buttons
@@ -163,6 +184,13 @@ struct ContentView: View {
 //  край на  HStack от бутони той е само за вьвеждане на данни
 //  при демонстрация не трябва да го има
 
+=======
+                
+                      
+//  MARK: - Buttons
+                
+             
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                 ZStack {
                     VStack(alignment: .center, spacing: 20){
                         ForEach(models.models) { model in
@@ -172,18 +200,30 @@ struct ContentView: View {
                                         self.onSelect = true
                                         let stringUrl = models.getURL(model: model)
                                         contractAddressHash = model.hash
+<<<<<<< HEAD
 
+=======
+                                    
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                                     if let url = NSURL(string: models.getURL(model: model)) {
                                         self.documentURL = url
                                         let data = NSData(contentsOf: NSURL(string: stringUrl) as! URL)
                                         self.dossihashedValue = "\(SHA256.hash(data: data! ))"
                                     print("dossihashedValue: ...\(dossihashedValue)")
                                         wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
+<<<<<<< HEAD
                                         contract = ProjectContract(wallet: wallet!, contract: model.hash)
                                     getProjectString(nomer: model.nomer) { str in
                                             print("srt:... \(str)")
                                             if str == self.dossihashedValue {
 
+=======
+                                        contract = ProjectContract(wallet: wallet!, contract: contractAddressHash)
+                                    getProjectString(nomer: model.nomer) { str in
+                                            print("srt:... \(str)")
+                                            if str == self.dossihashedValue {
+                                                
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                                                 self.isMedic = .pdfAction
                                             }else{
                                                 self.showAlert = true
@@ -196,11 +236,19 @@ struct ContentView: View {
                                         self.dossihashedValue = "\(SHA256.hash(data: data! ))"
                                     print("dossihashedValue: ...\(dossihashedValue)")
                                         wallet = getWallet(password: password, privateKey: "0b595c19b612180c8d0ebd015ed7c691e82dcfdeadf1733fa561ec2994a4be21", walletName:"metamask")
+<<<<<<< HEAD
                                     contract = ProjectContract(wallet: wallet!, contract: model.hash)
                                         getProjectString(nomer: model.nomer) { str in
                                             print("srt:... \(str)")
                                             if str == self.dossihashedValue {
 
+=======
+                                        contract = ProjectContract(wallet: wallet!, contract: contractAddressHash)
+                                        getProjectString(nomer: model.nomer) { str in
+                                            print("srt:... \(str)")
+                                            if str == self.dossihashedValue {
+                                                
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                                                 self.isMedic = .pdfAction
                                             }else{
                                                 self.showAlert = true
@@ -242,6 +290,7 @@ struct ContentView: View {
                 }
                 .padding(.bottom)
             }
+<<<<<<< HEAD
 
 
 
@@ -264,13 +313,25 @@ struct ContentView: View {
         .onTapGesture {
             self.onSelect = false
         }
+=======
+            
+         
+        }
+        .onTapGesture {
+            self.onSelect = false
+        }
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Warning"),
                   message: Text("The pdf file is not legitimate."),
                   dismissButton: .default(Text("Done"), action: {
                   }))
         }
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         .sheet(item: $isMedic)  { medic in
             switch medic {
             case .scanningAction:  ScannerView( scanningText: $scanningText)
@@ -278,12 +339,8 @@ struct ContentView: View {
             case .firebase: ProgressView()
             }
         }
-
-//        .onAppear(){
-//            self.models.loadCountry(company: self.company, medicine: self.medicine)
-//        }
-
     }
+<<<<<<< HEAD
 
 //    func loadUrlFromFirebase() {
 //        let fileRef     = Storage.storage().reference().child("nebilet.pdf")
@@ -296,6 +353,13 @@ struct ContentView: View {
 
     func saveToFB(manifacturer: String, medicine: String, fileName: String, country: String, flag: String, nomer: Int, hash : String) {
 
+=======
+    
+
+    
+    func saveToFB(manifacturer: String, medicine: String, fileName: String, country: String, flag: String, nomer: Int, hash : String) {
+        
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         let path = Bundle.main.path(forResource: fileName, ofType: "pdf")
         let filePathURL = URL(fileURLWithPath: path!)
         let fileREF = Storage.storage().reference().child("\(manifacturer)/\(fileName)")
@@ -321,7 +385,11 @@ struct ContentView: View {
                             print("Hashed Value: \(hashedValue)")
                             createNewProject( hashedValue: hashedValue, downloadURL: downloadURL.relativeString)
                         }catch{ print("no  > Hashed Value")}
+<<<<<<< HEAD
 
+=======
+                        
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
                         saveModelToFB(manifacturer: manifacturer, medicine:  medicine, downloadURL: downloadURL.relativeString, country: country, flag: flag, nomer: nomer, hash: hash)
                     }
                 }
@@ -332,11 +400,19 @@ struct ContentView: View {
 
         }
     }
+<<<<<<< HEAD
 
 
 
     func saveModelToFB(manifacturer: String, medicine: String, downloadURL: String,  country: String, flag: String, nomer : Int, hash : String){
 
+=======
+    
+    
+    
+    func saveModelToFB(manifacturer: String, medicine: String, downloadURL: String,  country: String, flag: String, nomer : Int, hash : String){
+        
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         let moselToSave = Country(country: country, flag: flag, urlToFile: downloadURL, name: medicine, hash: hash, nomer: nomer)
         let db = Firestore.firestore()
 
@@ -396,8 +472,13 @@ struct ContentView: View {
     }
 
     func createNewProject( hashedValue: SHA256.Digest, downloadURL: String) {
+<<<<<<< HEAD
 
 
+=======
+        
+        
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         let projectStart = "\(downloadURL)"
         let projectEnd = "\(hashedValue)"
 
@@ -423,17 +504,28 @@ struct ContentView: View {
             print("getProjectTitle response \(response)")
         }
     }
+<<<<<<< HEAD
 
     func getProjectString(nomer: Int, onDossi: @escaping (String) -> Void){
         let parameters = [] as [AnyObject]
 
+=======
+    
+    func getProjectString(nomer: Int, onDossi: @escaping (String) -> Void){
+        let parameters = [] as [AnyObject]
+      
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
         firstly {
             // Call contract method
             callContractMethodDossi(nomer: nomer ,method: .getDate, parameters: parameters,password: nil) { str in
                 print("Dossi ... \(str as String )")
 //                self.dossi = String(str)
                    onDossi(str)
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
             }
         }.done { response in
             // print out response

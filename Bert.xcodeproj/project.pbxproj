@@ -26,12 +26,15 @@
 		CC48B38A26B5F6F7009A607C /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48B38926B5F6F7009A607C /* Networks.swift */; };
 		CC48B38F26B5F700009A607C /* ContractHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC48B38E26B5F700009A607C /* ContractHelpers.swift */; };
 		CC898EC826B84ABA003D36AA /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CC898EC726B84ABA003D36AA /* CryptoSwift */; };
+<<<<<<< HEAD
 		CC8E59AF26F0263B006E6C5D /* nebilet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AA26F0263B006E6C5D /* nebilet.pdf */; };
 		CC8E59B026F0263B006E6C5D /* nebilet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AA26F0263B006E6C5D /* nebilet.pdf */; };
 		CC8E59B126F0263B006E6C5D /* nebilet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AA26F0263B006E6C5D /* nebilet.pdf */; };
 		CC8E59B226F0263B006E6C5D /* famotidine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AB26F0263B006E6C5D /* famotidine.pdf */; };
 		CC8E59B326F0263B006E6C5D /* famotidine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AB26F0263B006E6C5D /* famotidine.pdf */; };
 		CC8E59B426F0263B006E6C5D /* famotidine.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC8E59AB26F0263B006E6C5D /* famotidine.pdf */; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CC8E59B626F305D6006E6C5D /* FirebaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E59B526F305D6006E6C5D /* FirebaseView.swift */; };
 		CC9A7CF726FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */; };
 		CC9A7CF826FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */; };
@@ -42,9 +45,12 @@
 		CC9A7CFD26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
 		CC9A7CFE26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
 		CC9A7CFF26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */; };
+<<<<<<< HEAD
 		CC9A7D0026FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
 		CC9A7D0126FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
 		CC9A7D0226FAD74A004ACCA6 /* SIMPONI-es.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CC9A7D0326FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
 		CC9A7D0426FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
 		CC9A7D0526FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */; };
@@ -65,9 +71,12 @@
 		CCB3C28026EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
 		CCB3C28126EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
 		CCB3C28226EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */; };
+<<<<<<< HEAD
 		CCB3C28426EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
 		CCB3C28526EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
 		CCB3C28626EF09CB0055F010 /* PdfColor.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CCB3C28326EF09CB0055F010 /* PdfColor.pdf */; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CCB3C28826EF09DF0055F010 /* QQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C28726EF09DF0055F010 /* QQ.swift */; };
 		CCB3C28926EF09DF0055F010 /* QQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C28726EF09DF0055F010 /* QQ.swift */; };
 		CCB3C28A26EF09DF0055F010 /* QQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB3C28726EF09DF0055F010 /* QQ.swift */; };
@@ -126,13 +135,19 @@
 		CC48B38426B5F6E6009A607C /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		CC48B38926B5F6F7009A607C /* Networks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
 		CC48B38E26B5F700009A607C /* ContractHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractHelpers.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CC8E59AA26F0263B006E6C5D /* nebilet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nebilet.pdf; sourceTree = "<group>"; };
 		CC8E59AB26F0263B006E6C5D /* famotidine.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = famotidine.pdf; sourceTree = "<group>"; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CC8E59B526F305D6006E6C5D /* FirebaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseView.swift; sourceTree = "<group>"; };
 		CC9A7CF126FAD74A004ACCA6 /* PONVORY-English.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PONVORY-English.pdf"; sourceTree = "<group>"; };
 		CC9A7CF226FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OPSUMIT-Spanish.pdf"; sourceTree = "<group>"; };
 		CC9A7CF326FAD74A004ACCA6 /* PONVORY-Spanish.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PONVORY-Spanish.pdf"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CC9A7CF426FAD74A004ACCA6 /* SIMPONI-es.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SIMPONI-es.pdf"; sourceTree = "<group>"; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CC9A7CF526FAD74A004ACCA6 /* OPSUMIT-France.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OPSUMIT-France.pdf"; sourceTree = "<group>"; };
 		CC9A7CF626FAD74A004ACCA6 /* SIMPONI_Italy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SIMPONI_Italy.pdf; sourceTree = "<group>"; };
 		CC9A7D1526FAE334004ACCA6 /* russian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = russian.pdf; sourceTree = "<group>"; };
@@ -142,7 +157,10 @@
 		CCB3C27626EEF7A80055F010 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCB3C27A26EF026A0055F010 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		CCB3C27F26EF09B70055F010 /* Valsacor_Bulgarian.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Valsacor_Bulgarian.pdf; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CCB3C28326EF09CB0055F010 /* PdfColor.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PdfColor.pdf; sourceTree = "<group>"; };
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CCB3C28726EF09DF0055F010 /* QQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQ.swift; sourceTree = "<group>"; };
 		CCB3C28B26EF09EB0055F010 /* PdfKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PdfKit.swift; sourceTree = "<group>"; };
 		CCB3C28F26EF0A3A0055F010 /* EnumMedic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumMedic.swift; sourceTree = "<group>"; };
@@ -283,6 +301,7 @@
 			path = BertUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CC8E59A726F0245B006E6C5D /* PDFfiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +333,8 @@
 			path = PdfFlags;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 		CCB3C27E26EF099A0055F010 /* Dossi */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +345,6 @@
 				CC8E59B526F305D6006E6C5D /* FirebaseView.swift */,
 				CCB3C28F26EF0A3A0055F010 /* EnumMedic.swift */,
 				CCB3C28726EF09DF0055F010 /* QQ.swift */,
-				CC8E59A726F0245B006E6C5D /* PDFfiles */,
 			);
 			path = Dossi;
 			sourceTree = "<group>";
@@ -455,6 +475,7 @@
 				CC9A7D0626FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
 				CCB3C28026EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
 				CC48B22126B427FA009A607C /* Preview Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				CC218D5D27453A530097E84A /* russian-flag.png in Resources */,
 				CC218D6127453A810097E84A /* bulgarian-flag.png in Resources */,
 				CC218D6327453A970097E84A /* chinese-flag.png in Resources */,
@@ -467,6 +488,12 @@
 				CC9A7CF726FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
 				CC218D5F27453A710097E84A /* israeli-flag.png in Resources */,
 				CC8E59B226F0263B006E6C5D /* famotidine.pdf in Resources */,
+=======
+				CCB3C27726EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
+				CC9A7CFD26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
+				CC9A7D0326FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
+				CC9A7CF726FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 				CC9A7CFA26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
 				CC48B21E26B427FA009A607C /* Assets.xcassets in Resources */,
 			);
@@ -476,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				CC8E59B026F0263B006E6C5D /* nebilet.pdf in Resources */,
 				CCB3C28126EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
 				CC9A7D0726FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
@@ -485,6 +513,13 @@
 				CCB3C28526EF09CB0055F010 /* PdfColor.pdf in Resources */,
 				CC9A7D0426FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
 				CC8E59B326F0263B006E6C5D /* famotidine.pdf in Resources */,
+=======
+				CCB3C28126EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
+				CC9A7D0726FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
+				CC9A7CF826FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
+				CC9A7CFB26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
+				CC9A7D0426FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 				CC9A7CFE26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
 				CCB3C27826EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
 			);
@@ -494,6 +529,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				CC8E59B126F0263B006E6C5D /* nebilet.pdf in Resources */,
 				CCB3C28226EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
 				CC9A7D0826FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
@@ -503,6 +539,13 @@
 				CCB3C28626EF09CB0055F010 /* PdfColor.pdf in Resources */,
 				CC9A7D0526FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
 				CC8E59B426F0263B006E6C5D /* famotidine.pdf in Resources */,
+=======
+				CCB3C28226EF09B70055F010 /* Valsacor_Bulgarian.pdf in Resources */,
+				CC9A7D0826FAD74A004ACCA6 /* SIMPONI_Italy.pdf in Resources */,
+				CC9A7CF926FAD74A004ACCA6 /* PONVORY-English.pdf in Resources */,
+				CC9A7CFC26FAD74A004ACCA6 /* OPSUMIT-Spanish.pdf in Resources */,
+				CC9A7D0526FAD74A004ACCA6 /* OPSUMIT-France.pdf in Resources */,
+>>>>>>> 041db4968fd9bf825fed159b6e1b4a110bb518b1
 				CC9A7CFF26FAD74A004ACCA6 /* PONVORY-Spanish.pdf in Resources */,
 				CCB3C27926EEF7A80055F010 /* GoogleService-Info.plist in Resources */,
 			);
