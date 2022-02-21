@@ -60,7 +60,9 @@ func callContractMethod(method:ContractMethods,parameters:[AnyObject],password:S
                     let call = try tx!.send(password: password!)
                 }else{
                     let call = try tx!.call()
-                    print("project title \(call["0"])")
+                    print("Dossi project title \(call["0"])")
+
+                 
                 }
 
                 seal.resolve(.fulfilled(true))
@@ -74,4 +76,32 @@ func callContractMethod(method:ContractMethods,parameters:[AnyObject],password:S
 
 }
 
+func callContractMethodDossi( nomer: Int, method:ContractMethods,parameters:[AnyObject],password:String?, onDossi: @escaping (String) -> Void) -> Promise<Bool> {
+    return Promise { seal in
+        DispatchQueue.global().async {
 
+            let tx = contract!.buildCallMethod(method: method.rawValue, parameters: parameters,wallet: wallet!)
+            do {
+                // Depending on the type of call a password might be needed
+                if password != nil {
+                    let call = try tx!.send(password: password!)
+                }else{
+                    let call = try tx!.call()
+//                    print("Dossi project title \(call["0"])")
+//                    onDossi("\(call["0"] as! String)")
+                   
+                    onDossi("\(call["\(nomer)"] as! String)")
+
+                 
+                }
+
+                seal.resolve(.fulfilled(true))
+            }catch {
+                print(error)
+                seal.reject(error)
+            }
+        }
+    }
+
+
+}

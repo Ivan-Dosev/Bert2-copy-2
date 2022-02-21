@@ -20,9 +20,13 @@ struct PDFKitView: View {
                     pMode.wrappedValue.dismiss()
                 }) {
                     Text("Done")
-                        .frame(width: UIScreen.main.bounds.width / 1.2  , height: 100)
-                        .modifier(PrimaryButton())
-                }
+                        .font(.system(size: 27))
+                        .frame(width: UIScreen.main.bounds.width / 1.4  , height: 20)
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .padding()
+                        .background(Color.orange.opacity(0.5))
+                        .cornerRadius(15)
+                }.padding(.bottom)
                 
             }
 //            .edgesIgnoringSafeArea(.all)
